@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/8b8393bace.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8b8393bace.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,12 +16,35 @@
       rel="stylesheet"
     />
     <style>
-        .manrope {
-  font-family: "Manrope", serif;
-}
+      .manrope {
+        font-family: "Manrope", serif;
+      }
     </style>
   </head>
-  <body class="manrope">
-    <h1 class="text-3xl">Hello World</h1>
+  <body class="manrope max-w-screen-2xl mx-aut px-4 lg:px-28">
+    <!-- main content -->
+    <header class="flex py-10 my-10 items-center">
+      <!-- Text Content -->
+       <section class="flex flex-col gap-4 items-start">
+        <h1 class="font-bold text-3xl md:text-5xl lg:text-7xl lg:w-96">It's good 
+          tea time at The Tea House</h1>
+          <p class="text-gray-500 text-sm md:text-base lg:text-lg">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+          <button class="flex items-center gap-1 px-3 py-3 rounded text-white bg-gradient-to-r from-orange-500 to-red-500  font-semibold text-sm md:text-base lg:text-lg "><p>Explore More </p><i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+       </section>
+       <!-- Image Content -->
+       <section class="relative">
+        <img src="./assets/banner.png" alt="">
+        <!-- Card -->
+        <div class="absolute flex items-center bg-teal-50 shadow-md p-2 top-28 md:p-4 md:top-44 md:right-24 lg:p-8 rounded-lg gap-4 lg:top-96 lg:left-28 lg:w-60">
+          <!-- icon -->
+           <div><i class="fa-solid fa-star text-amber-400"></i></div>
+           <div>
+            <h2 class="font-bold lg:text-2xl">5.00</h2>
+            <p class="text-gray-400 text-sm">Trust Pilot Ratings</p>
+           </div>
+        </div>
+       </section>
+       
+    </header>
   </body>
 </html>
